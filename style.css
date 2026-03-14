@@ -1,0 +1,165 @@
+body{
+font-family:'Fredoka', sans-serif;
+margin:0;
+background:#f0fff4;
+}
+
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:#e63946;
+padding:20px;
+color:white;
+}
+
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:15px;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#4cc9f0;
+}
+
+
+/* MAIN LAYOUT */
+
+main{
+display:grid;
+gap:40px;
+padding:40px;
+}
+
+
+/* HERO */
+
+.hero{
+background:#4cc9f0;
+padding:40px;
+border-radius:20px;
+text-align:center;
+color:white;
+}
+
+
+/* ABOUT */
+
+.about{
+text-align:center;
+}
+
+.about img{
+border-radius:50%;
+border:5px solid #e63946;
+}
+
+
+/* SKILLS */
+
+.skills ul{
+list-style:none;
+padding:0;
+}
+
+.skills li{
+background:#2ecc71;
+margin:10px;
+padding:10px;
+border-radius:10px;
+color:white;
+}
+
+
+/* PROJECTS */
+
+.projects{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+
+.card{
+background:white;
+padding:20px;
+border-radius:20px;
+border:3px solid #4cc9f0;
+text-align:center;
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+border-color:#2ecc71;
+}
+
+
+/* BUTTON */
+
+button{
+background:#e63946;
+border:none;
+padding:10px 20px;
+border-radius:10px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:#2ecc71;
+}
+
+
+/* FORM */
+
+form{
+display:flex;
+flex-direction:column;
+width:300px;
+margin:auto;
+}
+
+input, textarea{
+padding:10px;
+margin-bottom:15px;
+border-radius:10px;
+border:2px solid #4cc9f0;
+}
+
+
+/* FOOTER */
+
+footer{
+background:#2ecc71;
+text-align:center;
+padding:20px;
+color:white;
+margin-top:40px;
+}
+
+
+/* MOBILE */
+
+@media (max-width:600px){
+
+header{
+flex-direction:column;
+text-align:center;
+}
+
+.projects{
+flex-direction:column;
+align-items:center;
+}
+
+}
